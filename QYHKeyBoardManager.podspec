@@ -89,7 +89,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  #s.source_files  = "Classes", "Classes/**/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
 
   s.public_header_files = "Classes/QYHKeyBoardManager.h"
@@ -132,6 +132,6 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
-  s.ios.vendored_libraries = 'Classes/libQYHKeyBoardManager.a'
+  s.ios.vendored_libraries = 'Classes/QYHKeyBoardManager.a'
 
 end
