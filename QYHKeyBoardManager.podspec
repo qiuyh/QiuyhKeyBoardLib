@@ -118,7 +118,7 @@ Pod::Spec.new do |s|
   #s.framework  = "UIKit"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
-  s.library   = "QYHKeyBoardManager"
+  #s.library   = "QYHKeyBoardManager"
   # s.libraries = "iconv", "xml2"
 
 
@@ -132,5 +132,6 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
+  vendored_libraries = 'Classes/libQYHKeyBoardManager.a'
 
 end
