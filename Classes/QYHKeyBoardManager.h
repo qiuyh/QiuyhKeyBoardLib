@@ -11,7 +11,7 @@
 //3.1在viewDidAppear 设置[QYHKeyBoardManager shareInstance].selfView = self.view;
 //3.2在viewWillDisappear 设置[QYHKeyBoardManager shareInstance].selfView = nil;就OK
 
-#warning  - 注意.......
+//#warning  - 注意.......
 /***
  *经过本人测试，适合所有的界面，若遇到什么bug可以向我提出来，共同学习。
  *
@@ -23,10 +23,14 @@
 #import <UIKit/UIKit.h>
 
 @interface QYHKeyBoardManager : NSObject
+/**
+ * 要改变frame的contentView，一般为self.view
+ */
+@property (nonatomic, strong) UIView *selfView;
+/**
+ * 弹起键盘的top与编辑框的bottom的间距，默认为30
+ */
+@property (nonatomic, assign) CGFloat keyBoardTop;
 
-@property (nonatomic,weak) UIView *selfView;
-
-+(instancetype)shareInstance;
-
-
++ (instancetype)shareInstance;
 @end

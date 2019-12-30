@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "QYHKeyBoardManager"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "键盘弹起处理"
   s.description  = "键盘弹起处理，适合所有的界面，简单方便"
   s.homepage     = "https://github.com/qiuyh/QiuyhKeyBoardLib"
