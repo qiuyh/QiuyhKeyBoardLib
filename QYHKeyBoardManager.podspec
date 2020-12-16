@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "QYHKeyBoardManager"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "键盘弹起处理"
   s.description  = "键盘弹起处理，适合所有的界面，简单方便"
   s.homepage     = "https://github.com/qiuyh/QiuyhKeyBoardLib"
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.source_files  = "Classes", "Classes/**/*.{h,m}"
   s.requires_arc  = true
 
-  s.public_header_files    = "Classes/QYHKeyBoardManager.h"
-  s.ios.vendored_libraries = "Classes/libQYHKeyBoardManager.a"
+  s.public_header_files    = "Classes/QYHKeyBoardManager.{h,m}"
+  #s.ios.vendored_libraries = "Classes/libQYHKeyBoardManager.a"
 
 end
